@@ -24,7 +24,7 @@ header {
     top: 0;
     padding: 20px 35px;
     background-color: var(--tertiary-color);
-    border-bottom: solid 5px var(--primary-color);
+    border-bottom: solid 10px var(--primary-color);
     z-index: 9999;
     
 }
@@ -79,8 +79,9 @@ header nav ul li a:hover {
     display: flex;
     justify-content: right;
     align-content: center;
-    margin: 25px 25px;
-    border-bottom: solid 2px;
+    margin: 25px 25px 0;
+    border-width: 0 0 50px;
+    border-bottom: solid 3px;
     padding-bottom: 30px;
 }
 
@@ -94,13 +95,27 @@ header nav ul li a:hover {
     margin: auto 15px auto;
 }
 
-.content {
+.flex-row {
     display: flex;
-    flex-flow: column wrap;
 }
 
-.content-title {
+.contents {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    border-bottom: solid 3px;
+    margin: 25px 25px 0;
+}
+
+.contents h3 {
+    flex: 1 30%;
     font-size: 50px;
     font-weight: normal;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-right: solid 3px;
+}
+
+.contents p {
+    flex: 12;
+
 }
