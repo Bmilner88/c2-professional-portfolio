@@ -18,25 +18,24 @@ body {
 header {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    padding: 20px 35px;
-    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+    top: 0;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    border-bottom: solid 5px var(--primary-color);
     z-index: 9999;
+    
 }
 
 header h1 {
     font-weight: bold;
+    font-style: italic;
+    color: var(--primary-color);
+    border: 5px 5px 5px 10px;
     margin: 0;
     font-size: 36px;
-    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -67,6 +66,41 @@ header nav ul li a {
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
-    border-radius: 15px;
+    border-radius: 100px;
     text-shadow: none;
+    text-decoration: none;
+}
+
+.primary-border {
+    border-color: var(--secondary-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    margin: 25px 25px;
+    border-bottom: solid 2px;
+    padding-bottom: 30px;
+}
+
+.hero-img img{
+    height: 100%;
+    width: 100%;
+    min-width: 165px;
+}
+
+.hero-subtitle {
+    margin: auto 15px auto;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.content-title {
+    font-size: 50px;
+    font-weight: normal;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
