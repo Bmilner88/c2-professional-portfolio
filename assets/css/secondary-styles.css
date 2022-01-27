@@ -5,12 +5,17 @@
     border-bottom: 3px solid;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2% 30%;
+    margin: 2% 600px;
 }
 
 article {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 2%;
+}
+
+article h2 {
+    border-right: solid 3px;
+    padding-right: 2%;
 }

@@ -13,6 +13,7 @@
 body {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
+    background-color: #dce3e0;
 }
 
 header {
@@ -71,28 +72,16 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
-.primary-border {
-    border-color: var(--secondary-color);
-}
-.subtitle {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    margin: 15px 15px auto;
-}
-
 main  {
     display: flex;
     flex-flow: column wrap;
-    margin: 3%;
+    margin: 5%;
     justify-content: space-between;
 }
 
 .section-title {
     display: flex;
-    width: auto;
     justify-content: space-between;
-    border-right: solid 3px;
 }
 
 .section-title h2 {
@@ -101,6 +90,8 @@ main  {
     font-weight: lighter;
     font-style: italic;
     padding-right: 2%;
+    width: 300px;
+    border-right: solid 3px;
 }
 
 #about-me, #work, #contact {
@@ -124,8 +115,9 @@ main  {
     display: flex;
     align-self: center;
     min-width: 200px;
-    border: solid 3px var(--secondary-color);
+    border: solid 4px var(--secondary-color);
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* #work div img{
