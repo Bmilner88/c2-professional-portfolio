@@ -108,12 +108,12 @@ main #about-me, #work, #contact {
 .content {
     display: flex;
     justify-content: flex-end;
-    line-height: 1.5em;
+    line-height: 2em;
     max-width: auto;
 }
 
 .content img {
     align-self: center;
     padding-left: 2%;
+    min-width: 250px;
 }
-
