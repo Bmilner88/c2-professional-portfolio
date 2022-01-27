@@ -84,14 +84,14 @@ header nav ul li a:hover {
 main  {
     display: flex;
     flex-flow: column wrap;
-    margin: 5%;
+    margin: 3%;
     justify-content: space-between;
 }
 
 .section-title {
     display: flex;
-    width: 32%;
-    margin-right: 10%;
+    width: auto;
+    justify-content: space-between;
     border-right: solid 3px;
 }
 
@@ -100,20 +100,35 @@ main  {
     font-size: 45px;
     font-weight: lighter;
     font-style: italic;
+    padding-right: 2%;
 }
 
-main #about-me, #work, #contact {
+#about-me, #work, #contact {
     display: flex;
+    margin: 1%;
 }
+
 .content {
     display: flex;
-    justify-content: flex-end;
-    line-height: 2em;
+    line-height: 2;
     max-width: auto;
+    text-align: right;
+    margin-left: 3%;
+    max-width: 1000px;
+}
+
+#about-me .content p {
+    padding-right: 2%;
 }
 
 .content img {
+    display: flex;
     align-self: center;
-    padding-left: 2%;
-    min-width: 250px;
+    min-width: 200px;
+    border: solid 3px var(--secondary-color);
+    border-radius: 20px;
 }
+
+/* #work div img{
+    max-width: 500px;
+} */
