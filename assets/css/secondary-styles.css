@@ -1,0 +1,16 @@
+.resume-title h2 {
+    display: flex;
+    font-size: 40px;
+    font-style: italic;
+    border-bottom: 3px solid;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 30%;
+}
+
+article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 2%;
+}

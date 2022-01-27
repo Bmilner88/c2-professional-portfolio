@@ -131,21 +131,3 @@ main  {
 /* #work div img{
     max-width: 500px;
 } */
-
-
-
-
-
-article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2%;
-}
-
-article h1 {
-    font-size: 40px;
-    font-style: italic;
-    border-bottom: 3px solid;
-    padding: 0 50px;
-}
