@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-This is my professional portfolio to showcase a bio, projects, and contact links.
+This is my professional portfolio to showcase my bio, projects, and contact links.
 
 ## Built With
 * HTML
