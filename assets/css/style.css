@@ -103,7 +103,7 @@ main  {
     display: flex;
     line-height: 2;
     max-width: auto;
-    text-align: right;
+    text-align: left;
     margin-left: 3%;
 }
 
@@ -123,3 +123,12 @@ main  {
 /* #work div img{
     max-width: 500px;
 } */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--tertiary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
