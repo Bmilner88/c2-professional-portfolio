@@ -71,51 +71,29 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
-.primary-border {
-    border-color: var(--secondary-color);
-}
-
-.hero {
-    display: flex;
-    justify-content: right;
-    align-content: center;
-    margin: 25px 25px 0;
-    border-width: 0 0 50px;
-    border-bottom: solid 3px;
-    padding-bottom: 30px;
-}
-
-.hero-img img{
-    height: 100%;
-    width: 100%;
-    min-width: 165px;
-}
-
-.hero-subtitle {
-    margin: auto 15px auto;
-}
-
 .flex-row {
     display: flex;
 }
 
-.contents {
+.primary-border {
+    border-color: var(--secondary-color);
+}
+.subtitle {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px auto;
+}
+
+main  {
+    display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    padding-left: 25px;
-    border-bottom: solid 3px;
-    margin: 25px 25px 0;
+    margin: 5%;
 }
 
-.contents h3 {
-    flex: 1 30%;
-    font-size: 50px;
-    font-weight: normal;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.section-title {
+    width: 30%;
+    padding-left: 10%;
+    margin-right: 10%;
     border-right: solid 3px;
-}
-
-.contents p {
-    flex: 12;
-
 }
