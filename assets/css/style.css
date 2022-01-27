@@ -114,7 +114,6 @@ main  {
     max-width: auto;
     text-align: right;
     margin-left: 3%;
-    max-width: 1000px;
 }
 
 #about-me .content p {
@@ -132,3 +131,21 @@ main  {
 /* #work div img{
     max-width: 500px;
 } */
+
+
+
+
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2%;
+}
+
+article h1 {
+    font-size: 40px;
+    font-style: italic;
+    border-bottom: 3px solid;
+    padding: 0 50px;
+}
