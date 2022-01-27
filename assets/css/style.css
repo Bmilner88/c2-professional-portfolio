@@ -88,19 +88,23 @@ main  {
     justify-content: space-between;
 }
 
-main h2 {
-    font-size: 45px;
-    font-weight: lighter;
-    font-style: italic;
+.section-title {
+    display: flex;
+    width: 32%;
+    margin-right: 10%;
     border-right: solid 3px;
 }
 
-.section-title {
-    width: 32%;
-    margin-right: 10%;
-    
+.section-title h2 {
+    display: flex;
+    font-size: 45px;
+    font-weight: lighter;
+    font-style: italic;
 }
 
+main #about-me, #work, #contact {
+    display: flex;
+}
 .content {
     display: flex;
     justify-content: flex-end;
@@ -108,7 +112,8 @@ main h2 {
     max-width: auto;
 }
 
-/* .content img {
+.content img {
+    align-self: center;
     padding-left: 2%;
 }
- */
+
