@@ -120,9 +120,9 @@ main  {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* #work div img{
+#work div img{
     max-width: 500px;
-} */
+}
 
 footer {
     display: flex;
