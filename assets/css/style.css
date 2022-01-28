@@ -99,6 +99,10 @@ main  {
     margin: 1%;
 }
 
+#work {
+    flex-wrap: wrap;
+}
+
 .content {
     display: flex;
     line-height: 2;
@@ -117,6 +121,13 @@ main  {
     border: solid 4px var(--secondary-color);
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68%;
+    justify-content: center;
 }
 
 #work img{
