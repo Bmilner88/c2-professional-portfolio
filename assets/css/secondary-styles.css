@@ -43,3 +43,7 @@ header {
 .secondary-content li {
     margin: 10px 20px;
 }
+
+h4 {
+    color: var(--tertiary-color);
+}
