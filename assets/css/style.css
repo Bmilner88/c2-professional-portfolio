@@ -100,7 +100,7 @@ main  {
     margin: 1%;
 }
 
-.content {
+#about-me .content {
     display: flex;
     line-height: 2;
     text-align: left;
@@ -123,6 +123,11 @@ main  {
 /* about me end */
 
 /* work section */
+#work .content {
+    display: flex;
+    margin-left: 3%;
+}
+
 .big-title {
     display:flex;
     flex-wrap: wrap;
@@ -149,6 +154,7 @@ main  {
     background-image: url("../images/run-buddy.png");
     border-radius: 15px;
     border: solid 4px var(--secondary-color);
+    opacity: 50%;
 }
 
 #work h3, h4, a {
@@ -187,42 +193,60 @@ main  {
     background-image: url("../images/horiseon.png");
     background-size: 100%;
     border: solid 4px var(--secondary-color);
+    opacity: 50%;
 }
 
 #card2{
     background-image: url("../images/professional-portfolio.png");
     background-size: 100%;
     border: solid 4px var(--secondary-color);
+    opacity: 50%;
 }
 
 #card3{
     background-color: white;
     background-size: 100%;
     border: solid 4px var(--secondary-color);
+    opacity: 50%;
 }
 
 #card4{
     background-color: white;
     background-size: 100%;
     border: solid 4px var(--secondary-color);
+    opacity: 50%;
+}
+
+.beeg-card:hover {
+    opacity: 100%;
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover {
+    opacity: 100%;
 }
 /* work end*/
 
 /* contact section */
 #contact .content {
-    flex-wrap: wrap;
-    
+    display: flex;
+
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #contact .content a h4 {
     display: flex;
-    width: auto;
     padding: 5px;
-    margin: 50px;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     border-radius: 10px;
     font-size: 30px;
+}
+
+#contact .content a h4:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .link {
@@ -233,6 +257,8 @@ main  {
     padding: 10px;
     justify-content: center;
     align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 /* contact end */
 
@@ -293,17 +319,20 @@ footer {
         margin: 3%;
     }
 
-    .beeg-card, .work-cards {
-        margin-top: 2%;
+    #work .content {
+        margin: 0;
+        flex-direction: column;
     }
-}
 
-@media screen and (max-width: 768px) {
+    .beeg-card {
+        height: 250px;
+    }
 
-}
+    .beeg-card, .work-cards {
+        margin: 2% auto 0;
 
-@media screen and (max-width: 575px) {
-
+        justify-content: center;
+    }
 }
 
 /* media queries end */
