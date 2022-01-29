@@ -72,7 +72,7 @@ header nav ul li a:hover {
 
 main  {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     margin: 5%;
     justify-content: space-between;
 }
@@ -97,22 +97,18 @@ main  {
     margin: 1%;
 }
 
-#work {
-    flex-wrap: wrap;
-}
-
-.bio {
+.content {
     display: flex;
     line-height: 2;
     text-align: left;
     margin-left: 3%;
 }
 
-#about-me .bio p {
+#about-me .content p {
     padding-right: 2%;
 }
 
-.bio img {
+#about-me .content img {
     display: flex;
     align-self: center;
     min-width: 200px;
@@ -121,18 +117,43 @@ main  {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.images {
+/* #work {
     display: flex;
     flex-wrap: wrap;
-    width: 68%;
-    justify-content: center;
+}
+
+.work-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.beeg {
+    display: flex;
+    align-self: center;
+    width: 600px;
+    height: 400px;
+}
+
+.smol {
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+
+.smol div {
+    align-self: center;
+    margin: 2%;
 }
 
 #work img{
     display: flex;
     align-self: center;
     flex-flow: row wrap;
-    min-width: 200px;
     border: solid 4px var(--secondary-color);
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -155,7 +176,7 @@ main  {
 
 .info p a:hover {
     text-decoration: underline;
-}
+} */
 
 footer {
     display: flex;
@@ -164,4 +185,53 @@ footer {
     background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
+}
+
+/* screen size smaller than 970px */
+@media screen and (max-width: 970px){
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    #about-me, #work, #contact {
+        flex-direction: column;
+    }
+
+    .section-title {
+        justify-content: center;
+    }
+
+    .section-title h2 {
+        display: flex;
+        font-size: 45px;
+        font-weight: lighter;
+        font-style: italic;
+        width: 300px;
+        border-right: none;
+        border-bottom: solid 3px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #about-me .bio p {
+        margin: 3%;
+    }
 }
