@@ -2,6 +2,8 @@
 
 This is my professional portfolio to showcase my bio, projects, and contact links.
 
+![alt text](./assets/images/readme-screenshot.png)
+
 ## Built With
 * HTML
 * CSS
