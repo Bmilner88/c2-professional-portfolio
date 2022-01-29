@@ -107,6 +107,7 @@ main  {
     margin-left: 3%;
 }
 
+/* about me section */
 #about-me .content p {
     padding-right: 2%;
 }
@@ -119,7 +120,9 @@ main  {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* about me end */
 
+/* work section */
 .big-title {
     display:flex;
     flex-wrap: wrap;
@@ -144,7 +147,8 @@ main  {
     width: 75%;
     margin-bottom: 30px;
     background-image: url("../images/run-buddy.png");
-    border-radius: 10px;
+    border-radius: 15px;
+    border: solid 4px var(--secondary-color);
 }
 
 #work h3, h4, a {
@@ -182,22 +186,55 @@ main  {
 #card1{
     background-image: url("../images/horiseon.png");
     background-size: 100%;
+    border: solid 4px var(--secondary-color);
 }
 
 #card2{
     background-image: url("../images/professional-portfolio.png");
     background-size: 100%;
+    border: solid 4px var(--secondary-color);
 }
 
 #card3{
     background-color: white;
     background-size: 100%;
+    border: solid 4px var(--secondary-color);
 }
 
 #card4{
     background-color: white;
     background-size: 100%;
+    border: solid 4px var(--secondary-color);
 }
+/* work end*/
+
+/* contact section */
+#contact .content {
+    flex-wrap: wrap;
+    
+}
+
+#contact .content a h4 {
+    display: flex;
+    width: auto;
+    padding: 5px;
+    margin: 50px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+/* contact end */
 
 footer {
     display: flex;
@@ -206,21 +243,6 @@ footer {
     background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
-}
-
-#contact .content {
-    display: flex;
-    padding: 3%;
-    justify-content: space-between;
-}
-
-#contact .content a h4 {
-    color: var(--primary-color);
-    background-color: var(--tertiary-color);
-    border-radius: 10px;
-    margin: 30%;
-    font-size: 30px;
-    
 }
 
 /* media queries */
