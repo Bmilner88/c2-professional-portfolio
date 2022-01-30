@@ -128,14 +128,19 @@ main  {
     margin-left: 3%;
 }
 
+.work-cards {
+    display: flex;
+    justify-content: center;
+}
+
 .big-title {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     background-size: 120%;
     justify-content: left;
     align-items: center;
     padding: 0 0 10px 30px;
-    font-size:35px;
+    font-size: 35px;
     border: solid var(--secondary-color) 3px;
     border-radius: 10px;
 }
@@ -150,6 +155,7 @@ main  {
 
 .beeg-card {
     width: 75%;
+    flex: auto;
     margin-bottom: 30px;
     background-image: url("../images/run-buddy.png");
     border-radius: 15px;
@@ -165,8 +171,6 @@ main  {
 .work-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 75%;
     padding: 1%;
 }
 
@@ -177,44 +181,43 @@ main  {
 }
 
 .title {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     width: 400px;
     height: 150px;
     padding: 10px;
     justify-content: left;
-    align-items:center;
+    align-items: center;
     font-size: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
 }
 
+
+
 #card1{
     background-image: url("../images/horiseon.png");
-    background-size: 100%;
-    border: solid 4px var(--secondary-color);
-    opacity: 50%;
 }
 
 #card2{
     background-image: url("../images/professional-portfolio.png");
-    background-size: 100%;
-    border: solid 4px var(--secondary-color);
-    opacity: 50%;
 }
 
 #card3{
     background-color: white;
-    background-size: 100%;
-    border: solid 4px var(--secondary-color);
-    opacity: 50%;
 }
 
 #card4{
     background-color: white;
-    background-size: 100%;
+}
+
+#card1, #card2, #card3, #card4 {
+    margin-bottom: 30px;
+    border-radius: 15px;
     border: solid 4px var(--secondary-color);
     opacity: 50%;
+    flex: auto;
+    
 }
 
 .beeg-card:hover {
@@ -315,7 +318,11 @@ footer {
         text-align: center;
     }
 
-    #about-me .bio p {
+    #about-me .content {
+        flex-direction: column;
+    }
+
+    #about-me p {
         margin: 3%;
     }
 
@@ -325,13 +332,29 @@ footer {
     }
 
     .beeg-card {
-        height: 250px;
+        height: 300px;
+        width: 75%;
     }
 
     .beeg-card, .work-cards {
         margin: 2% auto 0;
-
         justify-content: center;
+    }
+
+    #card1, #card2, #card3, #card4 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #card1, #card2, #card3, #card4 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #card1, #card2, #card3, #card4 {
+        width: 300px;
     }
 }
 
