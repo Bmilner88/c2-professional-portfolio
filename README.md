@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-This is my professional portfolio to showcase my bio, projects, and contact links.
+This is my first professional portfolio I built during the bootcamp. It doesn't use JavaScript, React or anything too crazy.
 
 ![alt text](./assets/images/readme-screenshot.png)
 
